@@ -7,6 +7,7 @@ import com.baomidou.mybatisplus.annotation.TableName;
 import com.baomidou.mybatisplus.annotation.Version;
 import lombok.Data;
 
+import java.io.Serializable;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
@@ -15,7 +16,8 @@ import java.time.LocalDateTime;
  */
 @Data // Lombok 注解，自动生成 getter, setter, toString 等方法
 @TableName("prize") // 映射到数据库的 prize 表
-public class Prize {
+public class Prize implements Serializable {
+    // 关键改动：实现 Serializable 接口
 
     @TableId(type = IdType.AUTO) // 声明主键并设置为自增
     private Long id;

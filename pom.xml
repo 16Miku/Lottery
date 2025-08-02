@@ -46,6 +46,14 @@
 		</dependency>
 
 
+		<!-- Spring Data Redis 依赖，用于集成 Redis 缓存 -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-redis</artifactId>
+		</dependency>
+
+
+
 
 		<!-- MySQL 驱动 -->
 		<dependency>
