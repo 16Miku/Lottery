@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f2f5;
+    color: #333;
+}
+
+.container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 90%;
+    max-width: 500px;
+}
+
+h1 {
+    color: #4CAF50;
+    margin-bottom: 30px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#resultMessage {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #d9534f; /* 默认红色表示未中奖 */
+    margin-top: 20px;
+}
+
+#prizeDisplay {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #4CAF50; /* 绿色表示中奖 */
+}
